@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation_bar</title>
+    <style>
+       .nav_bar{
+        background-color: rgb(34, 123, 239);
+        border-radius: 4px;
+       }
+       ul{
+        overflow: auto;  /*the ul design gets overflowed by parentclass design(giving this gets back the bg color)*/
+       }
+       .nav_bar li{
+         float: left; /*to make the list elements to be it in a line we using this..(but the bgcolor goes..) */
+          list-style: none; /*to get that bullets out. */
+          padding: 10px 12px;
+          margin: 6px 6px;
+        }
+        .nav_bar li a{
+             padding: 5px 15px; 
+             text-decoration: none; /*to get away all the underlines*/
+             color: white;
+        }
+        
+        .search{
+          float: right;  /* to make it move to the right end*/
+          color: white;
+          padding: 14px 210px;
+          margin: 1px 0px;
+        }
+        /* #search{
+          float: right;
+        } */
+        .nav_bar input{
+          border: 2px;
+          border-radius: 4px;
+          padding: 7px 41px;
+          width: 257px;
+          height: 10px;
+
+        }
+        .nav_bar li a:hover{
+             background-color: blueviolet;
+        }
+        .nav_bar li a img{
+          width: 2px;
+          height: 2px;
+          padding: 2px;
+          margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav_bar">
+          <ul>
+            <!-- <li><img src="" 
+              alt="flp"></li> -->
+              
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">ContactUs</a></li>
+             <li><a href="">Services</a></li>
+             <div class="search">
+              <input type="text" name="search" id="search" placeholder="Search for Products, Brands and more.. ">
+             </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
